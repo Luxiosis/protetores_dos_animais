@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+body {
+    background-color: rgb(219, 255, 240); 
+    color: rgb(8, 56, 0);
+}
+
+h1 {
+  margin-left: 2%;
+}
+
+form {
+  text-align: center;
+}
+
+i {
+  margin: auto;
+}
+
+#carrinho {
+  margin-left: 5%;
+}
+
+#quantidade2 {
+  margin: 2%;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 10px;
+   }
+   
+  i.add_circle {
+    font-weight: 600;
+    color: #590101;
+    text-transform: uppercase;
+    padding: 1em 1em;
+    background: #b0ffc4;
+    border: 1px solid #00390c;
+    border-radius: 0.75em;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+   }
+
+   
+   
+   i.add_circle:hover {
+    background: #ffe9e9;
+    -webkit-transform: translate(0, 0.25em);
+    transform: translate(0, 0.25em);
+   }
+   
+  i.add_circle:hover::before {
+    -webkit-box-shadow: 0 0 0 1px #b18597, 0 0.3em 0 0 #ffe3e2;
+    box-shadow: 0 0 0 1px #b18597, 0 0.3em 0 0 #ffe3e2;
+    -webkit-transform: translate3d(0, 0.3em, -5em);
+    transform: translate3d(0, 0.3em, -5em);
+   }
+   
+  i.add_circle:active {
+    background: #ffe9e9;
+    -webkit-transform: translate(0em, 0.75em);
+    transform: translate(0em, 0.75em);
+   }
+   
+ i.add_circle:active::before {
+    -webkit-box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+    box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+    -webkit-transform: translate3d(0, 0, -1em);
+    transform: translate3d(0, 0, -1em);
+   }
+
+   button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: rgb(187, 255, 206);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #003922;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
